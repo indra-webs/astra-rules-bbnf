@@ -1,0 +1,2 @@
+chunk_separator ::= #line
+    TRIPLE_DASH;

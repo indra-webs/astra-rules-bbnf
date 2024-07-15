@@ -1,0 +1,25 @@
+comparison_operator ::= 
+    equality_comparer
+    | inequality_comparer
+    | less_than_comparer
+    | greater_than_comparer
+    | less_than_or_equal_comparer
+    | greater_than_or_equal_comparer;
+
+equality_comparer ::= 
+    DOUBLE_EQUAL;
+
+inequality_comparer ::= 
+    BANG_EQUAL;
+
+less_than_comparer ::= #spaced
+    LEFT_ANGLE;
+
+greater_than_comparer ::= #spaced
+    RIGHT_ANGLE;
+
+less_than_or_equal_comparer ::=
+    EQUAL LEFT_ANGLE;
+
+greater_than_or_equal_comparer ::=
+    RIGHT_ANGLE EQUAL;

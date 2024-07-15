@@ -1,0 +1,4 @@
+literal ::= 
+    | char
+    | string
+    | number;

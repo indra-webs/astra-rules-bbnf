@@ -1,0 +1,17 @@
+uncaptured_assignment_operator ::=
+    | uncaptured_mutable_procedural_assigner
+    | uncaptured_immutable_procedural_assigner
+    | uncaptured_mutable_variable_assigner
+    | uncaptured_immutable_variable_assigner;
+
+uncaptured_mutable_procedural_assigner ::= 
+    RIGHT_TILDE_ARROW;
+
+uncaptured_immutable_procedural_assigner ::=
+    RIGHT_EQUAL_ARROW;
+
+uncaptured_mutable_variable_assigner ::=
+    TILDE_EQUAL;
+
+uncaptured_immutable_variable_assigner ::=
+    EQUAL;

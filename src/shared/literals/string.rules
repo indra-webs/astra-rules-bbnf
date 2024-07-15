@@ -1,0 +1,25 @@
+string ::=
+    chars 
+    | template 
+    | pattern 
+
+char ::=
+    SINGLE_QUOTE . [ 
+        !NEWLINE #len:1
+        | ESCAPE 
+    ] . SINGLE_QUOTE;
+
+chars ::= 
+    SINGLE_QUOTE 
+    . !NEWLINE* 
+    . SINGLE_QUOTE;
+
+template ::= 
+    DOUBLE_QUOTE 
+    . TOKEN* 
+    . DOUBLE_QUOTE;
+
+pattern ::= 
+    BACKTICK 
+    . TOKEN* 
+    . DOUBLE_QUOTE;

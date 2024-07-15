@@ -1,0 +1,2 @@
+assignment_operator ::=
+    uncaptured_assignment_operator;

@@ -1,0 +1,25 @@
+captured_assigner ::=
+    captured_mutable_field_assigner
+    | captured_immutable_field_assigner
+    | captured_final_field_assigner
+    | captured_mutable_procedural_assigner
+    | captured_immutable_procedural_assigner
+    | captured_final_procedural_assigner;
+    
+captured_mutable_field_assigner ::= 
+    COLON . WHITESPACE;
+
+captured_immutable_field_assigner ::=
+    DOUBLE_COLON . WHITESPACE;
+
+captured_final_field_assigner ::=
+    TRIPLE_COLON . WHITESPACE;
+
+captured_mutable_procedural_assigner ::= 
+    DOUBLE_RIGHT_ANGLE;
+
+captured_immutable_procedural_assigner ::=
+    DOUBLE_COLON DOUBLE_RIGHT_ANGLE;
+
+captured_final_procedural_assigner ::=
+    TRIPLE_COLON DOUBLE_RIGHT_ANGLE;

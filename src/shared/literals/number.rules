@@ -1,0 +1,9 @@
+number ::= 
+    integer
+    | decimal;
+
+integer ::= 
+    NUMBER;
+
+decimal ::= 
+    NUMBER DOT NUMBER;

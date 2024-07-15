@@ -1,0 +1,6 @@
+file ::=
+    stx.chunk?
+    [chunk_separator
+        blx.chunk?
+        [chunk_separator
+            prx.chunk?]];

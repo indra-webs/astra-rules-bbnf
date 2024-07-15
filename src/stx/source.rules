@@ -1,0 +1,32 @@
+file ::= #fyl
+    chunk;
+
+chunk ::= #hnk
+    expression*;
+
+expression ::= 
+    closure 
+    | statement;
+
+statement ::= #stm
+    assignment
+    | operation
+    | call
+    | literal
+    | lookup;
+    
+operation ::= #opr
+    unary
+    | binary
+    | match;
+
+closure ::= #stx
+    block
+    | group
+    | array
+    | map
+
+assignment ::= #mbr
+    keyed_entry
+    ordered_entry
+    

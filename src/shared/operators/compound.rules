@@ -1,0 +1,45 @@
+compound_operator ::=
+  plus_equals_operator
+  | minus_equals_operator
+  | times_equals_operator
+  | divide_equals_operator
+  | percent_equals_operator
+  | or_equals_operator
+  | and_equals_operator
+  | truthy_coalescing_operator
+  | falsy_coalescing_operator
+  | empty_coalescing_operator
+  | existance_coalescing_operator;
+
+plus_equals_operator ::=
+  PLUS_EQUAL;
+
+minus_equals_operator ::=
+  MINUS_EQUAL;
+
+times_equals_operator ::=
+  TIMES_EQUAL;
+
+divide_equals_operator ::=
+  DIVIDE_EQUAL;
+
+percent_equals_operator ::=
+  PERCENT_EQUAL;
+
+or_equals_operator ::=
+  OR_EQUAL;
+
+and_equals_operator ::=
+  AND_EQUAL;
+
+truthy_coalescing_operator ::=
+  DOUBLE_AND_EQUAL;
+
+falsy_coalescing_operator ::=
+  DOUBLE_PIPE_EQUAL;
+
+empty_coalescing_operator ::=
+  DOUBLE_BANG_EQUAL;
+
+existance_coalescing_operator ::=
+  DOUBLE_QUESTION_EQUAL;
